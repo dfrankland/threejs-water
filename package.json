@@ -1,0 +1,27 @@
+{
+  "name": "threejs-water",
+  "version": "0.0.1",
+  "description": "Three.js implementation of water with real-time caustics.",
+  "main": "app.js",
+  "author": "sydneyzh",
+  "homepage": "http://sydneyzh.me",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sydneyzh/threejs-water"
+  },
+  "keywords": [
+    "three",
+    "three.js",
+    "3d",
+    "webgl",
+    "water",
+    "shader",
+    "caustics"
+  ],
+  "devDependencies": {
+    "express": "^4.13.4",
+    "serve-favicon": "latest",
+    "path": "latest"
+  }
+}

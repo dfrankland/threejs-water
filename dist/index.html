@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <!-- sydneyzh 2016 
+         http://threejs-water/sydneyzh.com
+    -->
+    <head>
+        <title>Three.js Water by sydneyzh</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="THREE.js implementation of water with real-time caustics by sydneyzh.">
+        <meta name="author" content="sydneyzh">
+
+        <script type="text/javascript" src="./libs/dat.gui.js"></script>
+        <script type="text/javascript" src="./libs/stats.min.js"></script>
+        <script type="text/javascript" src="./libs/three.js"></script>
+        <script type="text/javascript" src="./libs/Detector.js"></script>
+        <script type="text/javascript" src="./libs/OrbitControls.js"></script>
+        <script type="text/javascript" src="./js/OpenBoxBufferGeometry.js"></script>
+        <script type="text/javascript" src="./js/LightHelper.js"></script>
+        <script type="text/javascript" src="./js/shaders.js"></script>
+        <script type="text/javascript" src="./js/ShaderPass.js"></script>
+        <script type="text/javascript" src="./js/WaterInfo.js"></script>
+        <script type="text/javascript" src="./js/CausticsInfo.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }   
+            body {
+                margin: 0;
+                overflow: hidden;
+                background-color: black;
+                text-align: center;
+                font-family: Verdana, Arial, sans-serif;
+            }
+            header{
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: bold;
+                color: #ccc;
+                margin-top: 35px;
+            }
+            footer{
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 9px;
+                line-height: 12px;
+                font-weight: normal;
+                color: #999;
+                margin-top: 20px;
+            }
+            a{
+                color: #aaa;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            a:visited{
+                color: #aaa;
+            }
+            #credits{
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #credits ul li{
+                color: #777;
+                font-size: 9px;
+                list-style-type: none;
+                display: inline;
+                font-weight: bold;
+            }
+            #credits ul li a{
+                color: #777;
+                font-weight: normal;
+            }
+            #container{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+            .dg .property-name{
+                text-align: left;
+                font-size: 9px;
+            }
+            .dg .c input[type=text]{
+                font-size: 9px;
+            }
+            .dg.main .close-button{
+                font-size: 9px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>THREE.js implementation of water</br>with real-time caustics</header>
+        <div id = "container"></div>
+        <footer>A WebGL experiment by <a href='http://sydneyzh.me'>sydneyzh</a>.</footer>
+        <div id = "credits">
+            <ul>
+                <li>Libs: 
+                    <a href = 'https://github.com/mrdoob/three.js'>Three.js</a>
+                    <a href = 'https://github.com/dataarts/dat.gui'>dat.GUI</a>
+                </li>
+                <li>Shader:
+                    <a href = 'https://github.com/evanw/webgl-water'>Evan Wallace</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
